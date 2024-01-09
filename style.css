@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+ol {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    counter-reset: list;
+    padding-left: 0;
+    background-color: #ef9eaf;
+    width: 500px;
+}
+
+li {
+    margin-bottom: 10px;
+    counter-increment: list;
+    color: white;
+    background-color: #c66377;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px;
+}
+  
+li::before {
+    content: counter(list) '.';
+    left: 0;
+    padding-right: 10px;
+}
+
+span {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #9f354b;
+}
